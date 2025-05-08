@@ -76,17 +76,6 @@ navAnchors.forEach(link => {
   });
 });
 
-window.addEventListener("resize", () => {
-  if (window.innerWidth >= 767) {
-    conNav.style.display = "flex";
-    menuNavOpen.style.display = "none";
-    menuNavClose.style.display = "none";
-  } else {
-    conNav.style.display = "none";
-    menuNavOpen.style.display = "block";
-    menuNavClose.style.display = "none";
-  }
-});
 
 //............................Periodically change the role text
 document.addEventListener("DOMContentLoaded", function () {
