@@ -291,6 +291,12 @@ const testimonials = [{
   role: "CEO - Bhee Unique Salon",
   quote: `“Nathaniel delivered exactly what I needed—a clean and classy website that matches my salon’s brand. He was patient, creative, and made everything simple to understand. Clients now book appointments more easily, and I’ve gotten compliments on how nice the site looks!”`
 },
+  {
+  name: "Daniel Usoroh",
+  role: "CEO - ITZ DONE COMPANY",
+  quote: `“Wow! Wow! Wow! This is so beautiful. The layout, colors, and attention to detail really stood out. You really put thought and care into every section. I'm so impressed.
+By the way,  I'm extending an invitation for you to be one of the shareholders in my company.”`
+},
 ];
 
 // Select the container for testimonials
