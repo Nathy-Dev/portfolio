@@ -257,7 +257,7 @@ function createProject( {
 }
 
 const projects = [{
-  image: "images/otp.jpg",
+  image: "images/Otp.jpg",
   alt: "otp gen project",
   title: "OTP Generator",
   description: "A secure OTP Generator app that sends 6-digit verification codes via email using EmailJS (no need for backend server), with built-in expiration timer (10 mins) and verification logic.",
