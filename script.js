@@ -194,13 +194,14 @@ window.addEventListener("scroll", () => {
 
 
 // //.......................work section
-function createProject( {
+function createProject({
   image,
   alt,
   title,
   description,
   github,
-  skills
+  skills,
+  type = "image"
 }) {
   let projectElement = document.querySelector(".projects");
 
@@ -210,9 +211,23 @@ function createProject( {
   let createContentPrjctImg = document.createElement("figure");
   createContentPrjctImg.className = "project__img";
 
-  let createPrjctImg = document.createElement("img");
-  createPrjctImg.src = image;
-  createPrjctImg.alt = alt;
+  // Create img or video
+  let createPrjctMedia;
+  if (type === "video") {
+  createPrjctMedia = document.createElement("video");
+  createPrjctMedia.src = image;
+  createPrjctMedia.alt = alt;
+  createPrjctMedia.loop = true;
+  createPrjctMedia.autoplay = true;
+  createPrjctMedia.muted = true;
+  createPrjctMedia.playsInline = true; // For mobile support
+  createPrjctMedia.className = "project__media";
+} else {
+  createPrjctMedia = document.createElement("img");
+  createPrjctMedia.src = image;
+  createPrjctMedia.alt = alt;
+  createPrjctMedia.className = "project__media";
+}
 
   let createContentPrjctInfo = document.createElement("div");
   createContentPrjctInfo.className = "card__content";
@@ -236,8 +251,8 @@ function createProject( {
   // Append structure
   projectElement.appendChild(createContentPrjct);
   createContentPrjct.appendChild(createContentPrjctImg);
+  createContentPrjctImg.appendChild(createPrjctMedia);
   createContentPrjct.appendChild(createContentPrjctInfo);
-  createContentPrjctImg.appendChild(createPrjctImg);
   createContentPrjctInfo.appendChild(createContentPrjctTitle);
   createContentPrjctInfo.appendChild(createContentPrjctDesc);
   createContentPrjctInfo.appendChild(createUlForSkills);
@@ -264,7 +279,7 @@ const projects = [{
     image: "images/portfolio-project.jpg",
     alt: "portfolio project",
     title: "My First portfolio",
-    description: "This is my very first personal portfolio website. It features a clean and simple design with four main sections: Home, About Me, Projects, and Contact. Here, I focused on a mobile-first approach before building a responsive layout using media queries to ensure a smooth experience across mobile, tablet, and desktop screens. I didn’t make use of it afterall.",
+    description: "This is my very first personal portfolio website. It features a clean and simple design with four main sections: Home, About Me, Projects, and Contact. Here, I focused on a mobile-first approach before building a responsive layout using media queries to ensure a smooth experience across mobile, tablet, and desktop screens. I didn't make use of it afterall.",
     github: "https://nathydev.tiiny.host",
     skills: ["JavaScript", "Typed.js", "CSS", "HTML", "Canva"]
   },
@@ -272,12 +287,22 @@ const projects = [{
     image: "images/awp.jpg",
     alt: "church project",
     title: "AWP Church Website",
-    description: "I designed and developed a fully responsive website for Apostles of the Word and Prayer Worldwide using only HTML, CSS, and JavaScript. The site features sermon downloads, live service access via Telegram, dynamic sermon filtering, a mobile-friendly navigation menu with smooth slide-in animations, and clean metadata for SEO. It’s structured to support both individual messages and sermon series. The entire project was coded on mobile, showcasing my adaptability and front-end development skills without relying on frameworks or build tools.",
-    github: " ",
+    description: "I designed and developed a fully responsive website for Apostles of the Word and Prayer Worldwide using only HTML, CSS, and JavaScript. The site features sermon downloads, live service access via Telegram, dynamic sermon filtering, a mobile-friendly navigation menu with smooth slide-in animations, and clean metadata for SEO. Itâ€™s structured to support both individual messages and sermon series. The entire project was coded on mobile, showcasing my adaptability and front-end development skills without relying on frameworks or build tools.",
+    github: "https://nathy-dev.github.io/awp-media/",
     skills: ["JavaScript", "CSS", "HTML", "Canva"]
-  }];
+  },
+  {
+  image: "videos/loginProject.mp4",
+  alt: "Responsive Login/Sign-up Interface",
+  title: "Responsive Login/Sign-up Interface",
+  description: "A sleek and modern login/sign-up interface showcasing a smooth toggle animation that allows users to switch seamlessly between the login and registration forms. The layout is fully responsive across all screen sizes. I incorporated Boxicons and Google Fonts to give the UI a stylish, modern appearance. The form includes social login icons for future integration of external authentication platforms. Though currently front-end only, I plan to connect this project with a backend system in future updates. This will include: Form validation, User authentication, Secure database integration.",
+  github: " ",
+  skills: ["HTML", "CSS", "JavaScript"],
+  type: "video"
+}];
 
 projects.forEach(project => createProject(project));
+
 
 
 //.......................Testimonials section
