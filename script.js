@@ -276,12 +276,12 @@ const projects = [{
   skills: ["JavaScript", "EmailJS", "HTML", "CSS"]
 },
   {
-    image: "images/portfolio-project.jpg",
-    alt: "portfolio project",
-    title: "My First portfolio",
-    description: "This is my very first personal portfolio website. It features a clean and simple design with four main sections: Home, About Me, Projects, and Contact. Here, I focused on a mobile-first approach before building a responsive layout using media queries to ensure a smooth experience across mobile, tablet, and desktop screens. I didn't make use of it afterall.",
-    github: "https://nathydev.tiiny.host",
-    skills: ["JavaScript", "Typed.js", "CSS", "HTML", "Canva"]
+    image: "images/to-do.jpg",
+    alt: "to-do list app",
+    title: "To-Do List App",
+    description: "A responsive, interactive to-do list application built with HTML, CSS, and JavaScript. It features a clean user interface with modal-based task input, time scheduling, real-time date display, task completion checkboxes with visual feedback, and swipe-left gesture for task deletion. Tasks are saved to local storage for persistent use across sessions.",
+    github: "https://nathy-dev.github.io/to-doList/",
+    skills: ["JavaScript", "CSS", "HTML", "Canva"]
   },
   {
     image: "images/awp.jpg",
