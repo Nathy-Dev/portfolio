@@ -307,17 +307,23 @@ projects.forEach(project => createProject(project));
 
 //.......................Testimonials section
 // Array of testimonial data
-const testimonials = [{
+const testimonials = [
+  {
+  name: "Daniel Usoroh",
+  role: "CEO - ITZ DONE COMPANY",
+  quote: `“Wow! Wow! Wow! This is so beautiful. The layout, colors, and attention to detail really stood out. You really put thought and care into every section. I'm so impressed. By the way, I'm extending an invitation for you to be one of the shareholders in my company.”`
+},
+  {
   name: "Bassey Anwan",
   role: "CEO - Bhee Unique Salon",
   quote: `“Nathaniel delivered exactly what I needed—a clean and classy website that matches my salon’s brand. He was patient, creative, and made everything simple to understand. Clients now book appointments more easily, and I’ve gotten compliments on how nice the site looks!”`
 },
   {
-  name: "Daniel Usoroh",
-  role: "CEO - ITZ DONE COMPANY",
-  quote: `“Wow! Wow! Wow! This is so beautiful. The layout, colors, and attention to detail really stood out. You really put thought and care into every section. I'm so impressed.
-By the way,  I'm extending an invitation for you to be one of the shareholders in my company.”`
+  name: "Hope Iddy",
+  role: "Videographer",
+  quote: `“Omo I have been struggling with time management ehh... I sometimes forget some things I plan to do for the day. This To-Do List App will really help me a lot. Wow, it's really cool honestly!”`
 },
+  
 ];
 
 // Select the container for testimonials
