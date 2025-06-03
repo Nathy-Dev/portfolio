@@ -123,9 +123,9 @@ let iconsLogo = [
 ];
 
 let iconsTitle = [
-  "javascript",
-  "css",
-  "html",
+  "JavaScript",
+  "CSS",
+  "HTML",
   "wordpress",
   "canva",
   // "express.js",
@@ -268,13 +268,13 @@ function createProject({
 }
 
 const projects = [{
-  image: "images/Otp.jpg",
-  alt: "otp gen project",
-  title: "OTP Generator",
-  description: "A secure OTP Generator app that sends 6-digit verification codes via email using EmailJS (no need for backend server), with built-in expiration timer (10 mins) and verification logic.",
-  github: "https://codepen.io/Nathy-Dev/pen/NPPPXqj",
-  skills: ["JavaScript", "EmailJS", "HTML", "CSS"]
-},
+    image: "images/awp.jpg",
+    alt: "church project",
+    title: "AWP Church Website",
+    description: "I built a fully responsive website for Apostles of the Word and Prayer Worldwide. I made it scalable to manage and display over 100+ sermons efficiently. Used a single HTML template with JavaScript and a JSON file to dynamically load sermon content. Eliminated the need for manual HTML edits by updating only the JSON file. Developed a PHP proxy downloader to bypass Internet Archive’s preview and force direct downloads. Improved user experience with seamless, fast, and mobile-friendly sermon access.",
+    github: "https://nathy-dev.github.io/awp-media/",
+    skills: ["JavaScript", "CSS", "HTML", "Canva", "php"]
+  },
   {
     image: "images/to-do.jpg",
     alt: "to-do list app",
@@ -284,12 +284,12 @@ const projects = [{
     skills: ["JavaScript", "CSS", "HTML", "Canva"]
   },
   {
-    image: "images/awp.jpg",
-    alt: "church project",
-    title: "AWP Church Website",
-    description: "I designed and developed a fully responsive website for Apostles of the Word and Prayer Worldwide using only HTML, CSS, and JavaScript. The site features sermon downloads, live service access via Telegram, dynamic sermon filtering, a mobile-friendly navigation menu with smooth slide-in animations, and clean metadata for SEO. Itâ€™s structured to support both individual messages and sermon series. The entire project was coded on mobile, showcasing my adaptability and front-end development skills without relying on frameworks or build tools.",
-    github: "https://nathy-dev.github.io/awp-media/",
-    skills: ["JavaScript", "CSS", "HTML", "Canva"]
+    image: "images/Otp.jpg",
+    alt: "otp gen project",
+    title: "OTP Generator",
+    description: "A secure OTP Generator app that sends 6-digit verification codes via email using EmailJS (no need for backend server), with built-in expiration timer (10 mins) and verification logic.",
+    github: "https://codepen.io/Nathy-Dev/pen/NPPPXqj",
+    skills: ["JavaScript", "EmailJS", "HTML", "CSS"]
   },
   {
   image: "videos/loginProject.mp4",
