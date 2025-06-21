@@ -271,9 +271,25 @@ const projects = [{
     image: "images/awp.jpg",
     alt: "church project",
     title: "AWP Church Website",
-    description: "I built a fully responsive website for Apostles of the Word and Prayer Worldwide. I made it scalable to manage and display over 100+ sermons efficiently. Used a single HTML template with JavaScript and a JSON file to dynamically load sermon content. Eliminated the need for manual HTML edits by updating only the JSON file. Developed a PHP proxy downloader to bypass Internet Archive’s preview and force direct downloads. Improved user experience with seamless, fast, and mobile-friendly sermon access.",
+    description: "Designed and built a scalable sermon management system for Apostles of the Word and Prayer Worldwide. Created a single-template sermon page that fetches data dynamically for 100+ sermons. Developed a PHP proxy downloader to bypass Internet Archive’s preview and force direct downloads. Improved user experience with seamless, fast, and mobile-friendly sermon access.",
     github: "https://nathy-dev.github.io/awp-media/",
     skills: ["JavaScript", "CSS", "HTML", "Canva", "php"]
+  },
+  {
+    image: "images/goh.png",
+    alt: "GOH Graphix",
+    title: "GOH Graphix Landing Page",
+    description: "Designed and built a custom website for GOH Graphix, a creative design studio. Focused on clean visuals, responsive layout, and smooth user experience. Added dynamic features like a testimonial carousel and filterable portfolio. Built entirely with HTML, CSS, and JavaScript—no frameworks used.",
+    github: "https://nathy-dev.github.io/GOH-Graphix/",
+    skills: ["CSS", "HTML", "JavaScript", "Canva"]
+  },
+  {
+    image: "images/chill-wave.png",
+    alt: "Chill Wave Lounge",
+    title: "ChillWave Lounge",
+    description: "A fully responsive lounge website built with pure HTML, CSS3, and vanilla JavaScript. This personal project demonstrates my ability to design custom UIs, implement mobile-first layouts, and create an interactive navigation experience without frameworks. It reflects both creative design thinking and clean, maintainable code practices.",
+    github: "https://nathy-dev.github.io/chill-wave/",
+    skills: ["CSS", "JavaScript",  "HTML", "Canva"]
   },
   {
     image: "images/to-do.jpg",
