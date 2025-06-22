@@ -266,6 +266,9 @@ body {
 }
 
 .main-container header .header-container nav .actions .downl-cv {
+  text-align: center;
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
   padding: 9px 16px;
   background-color: var(--color-900);
   color: var(--color-50);
