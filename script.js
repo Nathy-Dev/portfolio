@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Clear the static word so it doesn't overlap
     document.getElementById("typed").textContent = "";
     new Typed("#typed", {
-      strings: ["Programmer", "Freelance Developer", "UI/UX Designer", "Junior Frontend Developer"],
+      strings: ["AI Automation Builder", "Programmer", "Freelance Developer", "Frontend Developer"],
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 1500,
@@ -273,8 +273,16 @@ const projects = [{
     alt: "church project",
     title: "AWP Church Website",
     description: "Designed and built a scalable sermon management system for Apostles of the Word and Prayer Worldwide. Created a single-template sermon page that fetches data dynamically for 100+ sermons. Developed a PHP proxy downloader to bypass Internet Archive’s preview and force direct downloads. Improved user experience with seamless, fast, and mobile-friendly sermon access.",
-    github: "https://nathy-dev.github.io/awp-media/",
+    github: "https://awpwmedia.org",
     skills: ["JavaScript", "CSS", "HTML", "Canva", "php"]
+  },
+  {
+    image: "images/kom.png",
+    alt: "Kompetent Solar Tech",
+    title: "Kompetent Solar Tech Website",
+    description: "Developed a responsive, multi-page corporate website for Kompetent Solar Technology, a renewable energy company, with a strong focus on SEO and accessibility. I implemented a serverless JavaScript function that captures form data and opens it directly in a pre-filled WhatsApp chat, creating an instant communication bridge from the website.",
+    github: "https://komsolartech.com.ng",
+    skills: ["HTML", "CSS", "JavaScript", "Canva"]
   },
   {
     image: "images/goh.png",
