@@ -1014,6 +1014,7 @@ body {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   box-shadow: var(--shadow-md);
+  object-fit: fill;
 }
 
 .main-container section.work .container .projects .project .card__content {
