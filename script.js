@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Clear the static word so it doesn't overlap
     document.getElementById("typed").textContent = "";
     new Typed("#typed", {
-      strings: ["AI Automation Builder", "Programmer", "Freelance Developer", "Frontend Developer"],
+      strings: ["an AI Automation Builder", "a Programmer", "a Freelance Developer", "a Frontend Developer"],
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 1500,
